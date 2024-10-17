@@ -47,3 +47,29 @@ public class TestFlyweight {
         npc3.showNpc();
     }
 }
+
+/*
+ * Patrón de diseño: Flyweight
+ *
+ * Descripción:
+ * - El patrón Flyweight permite compartir objetos para soportar un gran número de
+ *   objetos de manera eficiente. Este patrón utiliza la reutilización de objetos
+ *   para minimizar el uso de memoria y mejorar el rendimiento al evitar la
+ *   creación de objetos redundantes.
+ *
+ * Uso:
+ * - Se utiliza cuando se necesita crear una gran cantidad de objetos similares
+ *   y se quiere reducir el consumo de memoria. Es útil en aplicaciones que
+ *   requieren el manejo de un gran número de instancias de un objeto, como en
+ *   gráficos, juegos o sistemas de gestión de documentos.
+ *
+ * Ejemplo:
+ * - Una clase `Flyweight` que representa el estado compartido. Clases concretas
+ *   que implementan `Flyweight` y contienen el estado intrínseco. Un `FlyweightFactory`
+ *   que gestiona la creación y el almacenamiento de los objetos Flyweight.
+ *
+ * Ventajas:
+ * - Reduce el uso de memoria al compartir objetos similares.
+ * - Mejora el rendimiento al disminuir la sobrecarga de creación de objetos.
+ * - Facilita la gestión de un gran número de instancias.
+ */

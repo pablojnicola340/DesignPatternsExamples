@@ -17,3 +17,30 @@ public class TestObservable {
         vigilant.activate();
     }
 }
+
+/*
+ * Patrón de diseño: Observer
+ *
+ * Descripción:
+ * - El patrón Observer define una relación entre objetos en la que un objeto,
+ *   llamado sujeto, notifica a otros objetos, llamados observadores, sobre
+ *   cambios en su estado. Este patrón permite que los objetos se comuniquen
+ *   entre sí sin tener una referencia directa entre ellos.
+ *
+ * Uso:
+ * - Se utiliza cuando se necesita notificar a múltiples objetos sobre cambios
+ *   en el estado de otro objeto. Es común en aplicaciones que requieren
+ *   actualizaciones en tiempo real, como sistemas de monitoreo o aplicaciones
+ *   de trading.
+ *
+ * Ejemplo:
+ * - Una interfaz `Observer` que define el método de notificación. Una interfaz
+ *   `Subject` que define los métodos para agregar y eliminar observadores.
+ *   Una clase concreta `ConcreteSubject` que implementa la lógica de notificación.
+ *
+ * Ventajas:
+ * - Permite que los objetos se comuniquen entre sí sin tener una referencia
+ *   directa entre ellos.
+ * - Facilita la adición de nuevos observadores sin modificar el código existente.
+ * - Promueve la separación de responsabilidades entre los objetos.
+ */
